@@ -31,7 +31,6 @@ class Pokemon {
   }
 }
 /*
-(counter | lui même) > le pokémon > contest  
 (FEU | EAU) > FEU > PLANTE
 (FEU | PLANTE) > PLANTE > EAU
 (EAU | PLANTE) > EAU > FEU
@@ -83,3 +82,22 @@ class PokemonPlante extends Pokemon {
     }
   }
 }
+
+const pikachu = new PokemonEau("Pikachu", 210, 30);
+const bulbizarre = new PokemonPlante("Bulbizarre", 120, 25);
+const salameche = new PokemonFeu("Salameche", 150, 35);
+const carapuce = new PokemonEau("Carapuce", 110, 32);
+const herbizarre = new PokemonPlante("Herbizarre", 230, 28);
+
+console.log('Avant le combat :');
+console.table([pikachu, bulbizarre, salameche, carapuce, herbizarre]);
+
+console.log('\nCombat :');
+pikachu.attaquer(salameche);
+bulbizarre.attaquer(carapuce);
+salameche.attaquer(bulbizarre);
+carapuce.attaquer(herbizarre);
+herbizarre.attaquer(salameche);
+
+console.log('Après le combat :');
+console.table([pikachu, bulbizarre, salameche, carapuce, herbizarre]);
