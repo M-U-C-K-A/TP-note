@@ -1,3 +1,9 @@
+/*
+ * Nom du fichier: script.ts
+ * Description: Ce fichier contient le code source pokemon pour le TP noté
+ * Auteur: Hugo DELACOUR
+ * Date de création: 19 septembre 2023
+ */
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -39,7 +45,6 @@ var Pokemon = /** @class */ (function () {
     return Pokemon;
 }());
 /*
-(counter | lui même) > le pokémon > contest
 (FEU | EAU) > FEU > PLANTE
 (FEU | PLANTE) > PLANTE > EAU
 (EAU | PLANTE) > EAU > FEU
@@ -106,7 +111,6 @@ var herbizarre = new PokemonPlante("Herbizarre", 230, 28);
 console.log('Avant le combat :');
 console.table([pikachu, bulbizarre, salameche, carapuce, herbizarre]);
 console.log('\nCombat :');
-console.log('');
 pikachu.attaquer(salameche);
 bulbizarre.attaquer(carapuce);
 salameche.attaquer(bulbizarre);

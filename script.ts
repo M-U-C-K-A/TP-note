@@ -1,3 +1,10 @@
+/*
+ * Nom du fichier: script.ts
+ * Description: Ce fichier contient le code source pokemon pour le TP noté
+ * Auteur: Hugo DELACOUR
+ * Date de création: 19 septembre 2023
+ */
+
 class Pokemon {
   private nom: string;
   protected pointsDeVie: number;
